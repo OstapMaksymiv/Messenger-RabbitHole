@@ -1,0 +1,24 @@
+.ms{
+    max-width: 36rem;
+}
+
+@media (max-width:740px) {
+    .ms{
+        max-width: 25rem;
+    }
+    .message-img{
+        width: 200px;
+    }
+
+    .message-pre-img img{
+        object-fit: cover;
+        width: 100px;
+        height: 50px;
+    }
+}
+@media (max-width:570px) {
+    .ms{
+        max-width: 17rem;
+        font-size: 13px;
+    }
+}

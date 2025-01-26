@@ -1,0 +1,50 @@
+.main-block{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    justify-content: space-between;
+    .side-logo{
+        width: 56px;
+        height: 56px;
+        filter: invert(100%);
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+  
+        justify-content: center;
+        position: relative;
+        gap: 10px;
+        .seasons {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+       
+        }
+    }
+    .season-block{
+        transition: 0.5s ease-in-out;
+        height: 73px;
+
+      
+    }
+}
+
+.main-block .season-block.open {
+    height: 206px;
+}
+.seasons li button .season-icon {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+.seasons li button.active .season-icon {
+    opacity: 1; 
+}
+@media (any-hover: hover) {
+    
+    .seasons li:hover .season-icon {
+        opacity: 1; 
+    }
+    
+}

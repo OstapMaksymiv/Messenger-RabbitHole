@@ -1,0 +1,21 @@
+.search{
+    background-color: transparent;
+    padding:0.5rem 1rem 0.5rem 1.7rem;
+    outline:none
+}
+.search::placeholder{
+    font-size: 14px;
+}
+
+@media (max-width:860px) {
+    .sidebar {
+   
+    width: 400px;
+      }
+}
+@media (max-width:540px) {
+    .sidebar {
+       
+        width:300px;
+      }
+}

@@ -1,0 +1,9 @@
+.home-block {
+  height: 550px;
+}
+
+@media (max-width: 440px) {
+  .home-block {
+    height: 500px;
+  }
+}/*# sourceMappingURL=homeStyles.css.map */
