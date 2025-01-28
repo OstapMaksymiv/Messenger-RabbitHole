@@ -28,7 +28,7 @@ function App() {
         ]
     },
     {
-      path: "/app",
+      path: "/",
       element: <SecondLayout/>,
       children:[
         {
