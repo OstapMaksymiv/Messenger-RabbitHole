@@ -15,11 +15,11 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-        element: <SecondLayout/>,
+        element: <FirstLayout/>,
         children:[
           {
             path: "/",
-            element: <Lobby/>,
+            element: <Login/>,
           },
           {
             path: "/faq",
