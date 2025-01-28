@@ -8,7 +8,7 @@ import { IKImage } from "imagekitio-react";
 import model from '../../utils/gimini'
 
 import useConversation from '../../zustand/useConversation';
-import Upload from '../../upload/upload';
+import Upload from '../../upload/Upload';
 import { useAuthContext } from '../../context/AuthContext';
 import { MdDeleteOutline } from "react-icons/md";
 import toast from 'react-hot-toast';

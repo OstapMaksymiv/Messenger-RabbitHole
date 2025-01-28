@@ -4,7 +4,7 @@ import useSendMessage from '../../hooks/useSendMessage';
 import useGetMessages from '../../hooks/useGetMessages';
 
 import { IKImage } from "imagekitio-react";
-import Upload from '../../upload/upload';
+import Upload from '../../upload/Upload';
 import useConversation from '../../zustand/useConversation';
 import { useAuthContext } from '../../context/AuthContext';
 import { MdDeleteOutline } from "react-icons/md";
