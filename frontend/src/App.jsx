@@ -19,7 +19,7 @@ function App() {
         children:[
           {
             path: "/",
-            element: <Login/>,
+            element: <Lobby/>,
           },
           {
             path: "/faq",
@@ -28,7 +28,7 @@ function App() {
         ]
     },
     {
-      path: "/",
+      path: "/app",
       element: <SecondLayout/>,
       children:[
         {
