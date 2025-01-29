@@ -10,6 +10,7 @@ const useLogin = () => {
         const success =  handleInputErrors({username, password});
         if(!success) return
         setLoading(true)
+        console.log(import.meta.env.VITE_BACKEND_URL);
         try {
             const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/login`,{
                 method:"POST",
@@ -25,6 +26,9 @@ const useLogin = () => {
             setAuthUser(data)
             navigate('/home')
         } catch (error) {
+            console.log(error);
+            console.log(error.message);
+
             toast.error(error.message)
         }finally{
             setLoading(false)

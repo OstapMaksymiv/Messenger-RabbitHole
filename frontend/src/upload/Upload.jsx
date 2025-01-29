@@ -7,7 +7,7 @@ const publicKey = import.meta.env.VITE_IMAGE_KIT_PUBLIC_KEY;
 
 const authenticator = async () => {
   try {
-    const response = await fetch("http://localhost:3400/api/upload");
+    const response = await fetch("https://messenger-rabbithole-backend.onrender.com/api/upload");
 
     if (!response.ok) {
       const errorText = await response.text();

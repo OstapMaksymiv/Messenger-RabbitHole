@@ -36,5 +36,5 @@ const port = process.env.PORT || 3400;
 
 server.listen(port, () => {
     connectToMongoDB();
-    console.log("Server was started1");
+    console.log("Server was started");
 })
