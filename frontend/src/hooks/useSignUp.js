@@ -11,7 +11,7 @@ const useSignUp =  () => {
       if(!success) return
       setLoading(true)
       try {
-        const res = await fetch("http://localhost:3400/api/auth/signup",{
+        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/signup`,{
             method:"POST",
             credentials: "include", 
             headers:{"Content-Type":"application/json"},

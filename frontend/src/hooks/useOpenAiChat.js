@@ -9,7 +9,7 @@ const useOpenAiChat = () => {
 	const OpenAiChat = async () => {
 	  setLoading(true);
 	  try {
-		const res = await fetch("http://localhost:3400/api/ai-chats", {
+		const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/ai-chats`, {
 		  method: "GET",
 		  credentials: "include", 
 		  headers: { "Content-Type": "application/json" },

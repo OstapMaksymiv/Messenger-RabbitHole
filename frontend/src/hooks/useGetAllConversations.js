@@ -13,7 +13,7 @@ const useGetAllConversations = () => {
 		const getConversations = async () => {
 			setLoading(true);
 			try {
-				const res = await fetch(`http://localhost:3400/api/conversation`,{
+				const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversation`,{
 					method:"GET",
 					credentials: "include", 
 					headers:{"Content-Type":"application/json"},

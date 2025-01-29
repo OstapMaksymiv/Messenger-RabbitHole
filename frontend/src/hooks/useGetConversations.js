@@ -15,7 +15,7 @@ const useGetConversations = () => {
 		const getConversations = async () => {
 			setLoading(true);
 			try {
-				const res = await fetch("http://localhost:3400/api/users",{
+				const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/users`,{
                     method:"GET",
                     credentials: "include", 
                     headers:{"Content-Type":"application/json"},
@@ -28,7 +28,7 @@ const useGetConversations = () => {
 		
 				
 			
-				const res2 = await fetch(`http://localhost:3400/api/conversation`,{
+				const res2 = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversation`,{
 					method:"GET",
 					credentials: "include", 
 					headers:{"Content-Type":"application/json"},
