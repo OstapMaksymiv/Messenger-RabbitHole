@@ -107,11 +107,6 @@ const Faq = () => {
     
       </div>
     </section>
-        <p className="footer">
-          Created and all rights reserved by Ostap Maksymiv © 2025
-        </p>
-
-       
         {Array(4)
           .fill(null)
           .map((_, index) => (
