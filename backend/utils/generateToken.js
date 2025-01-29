@@ -8,8 +8,8 @@ export const generateToken = (userId, res) => {
     res.cookie("token",token,{
         httpOnly: true,
         maxAge:age,
-        secure: false, // Работает только через HTTPS
-        sameSite: 'Lax'
+        secure: true, // Обов'язково для sameSite: 'None'
+        sameSite: 'None'
     })
     
 
