@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken'
 export const generateToken = (userId, res) => {
+    console.log('started creating token');
     const age = 1000 * 60 * 60 * 24 * 7;
     const token = jwt.sign({
         userId
@@ -7,6 +8,8 @@ export const generateToken = (userId, res) => {
     res.cookie("token",token,{
         httpOnly: true,
         maxAge:age,
+        secure: true, // Работает только через HTTPS
+        sameSite: 'None'
     })
     
 
