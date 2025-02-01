@@ -13,8 +13,8 @@ const Conversation = ({conv,emoji,lastIdx}) => {
 	}
 	return (
 		<>
-			<div className={`flex gap-2 items-center px-3 hover:bg-sky-500 rounded  py-1 cursor-pointer
-				${isSelected ? "bg-sky-500" : ""}
+			<div className={`flex gap-2 items-center px-3 hover:bg-[rgb(34,36,86)]  py-1 cursor-pointer
+				${isSelected ? "bg-[rgb(34,36,86)]" : ""}
 			`} onClick={handleClick}>
 				<div className={`avatar ${isOnline ? "online" : ''}`}>
 					<div className='w-12 rounded-full'>

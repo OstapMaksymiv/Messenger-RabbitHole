@@ -161,7 +161,7 @@ const Sidebar = () => {
 
 
 
-			<div className={`flex gap-2 items-center hover:bg-sky-500 rounded px-4  py-1 cursor-pointer `} onClick={handleOpenAiChat} >
+			<div className={`flex gap-2 items-center hover:bg-[rgb(34,36,86)] rounded px-4 ${selectedAiConversation && "bg-[rgb(34,36,86)]"}  py-1 cursor-pointer `} onClick={handleOpenAiChat} >
 				<div className={`avatar `}>
 					<div className='w-12 rounded-full'>
 						<img

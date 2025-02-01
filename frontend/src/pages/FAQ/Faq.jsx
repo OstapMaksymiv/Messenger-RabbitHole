@@ -67,14 +67,14 @@ const Faq = () => {
     <div id="page" ref={pageRef} data-route={route}>
       
       <div className="navigation" ref={navRef}>
-        <a href='/' style={{display:'flex', alignItems:'center',gap:'20px'}}>
+        <Link to='/' style={{display:'flex', alignItems:'center',gap:'20px'}}>
         <img
           src="/rabbithole.png"
           alt="Rabbit Hole Logo"
           className={`nav-logo`}
         />
         <span className="logo-text">RabbitHole</span>
-        </a>
+        </Link>
         <div>
           <Link to={'/'}>Contacts</Link>
           <Link to={'/faq'}>FAQ</Link>
