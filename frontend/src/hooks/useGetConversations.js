@@ -18,7 +18,9 @@ const useGetConversations = () => {
 				const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/users`,{
                     method:"GET",
                     credentials: "include", 
-                    headers:{"Content-Type":"application/json"},
+                    headers: {
+						"Authorization": `Bearer ${localStorage.getItem("token")}`
+					}
                 });
 				const data = await res.json();
 				if (data.error) {
@@ -31,7 +33,9 @@ const useGetConversations = () => {
 				const res2 = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversation`,{
 					method:"GET",
 					credentials: "include", 
-					headers:{"Content-Type":"application/json"},
+					headers: {
+						"Authorization": `Bearer ${localStorage.getItem("token")}`
+					}
 				});
 				const newData = await res2.json();
 				const convWithTalk = data.filter((user) =>
