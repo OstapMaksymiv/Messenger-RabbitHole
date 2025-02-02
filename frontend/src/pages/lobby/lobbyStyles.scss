@@ -505,7 +505,7 @@ nav ul{
   .circle-container {
     $particleNum: 200;
     $particleColor: hsl(0, 0%, 100%);
-  
+    z-index: -1;
     position: absolute;
     transform: translateY(-10vh);
     animation-iteration-count: infinite;
@@ -753,7 +753,7 @@ nav ul{
     display: none;
   }
   .main-info .title{
-    font-size: 24 px;
+    font-size: 24px;
     width: 300px;
   }
   .main-info .title span {
