@@ -5,13 +5,12 @@ export const generateToken = (userId, res) => {
     const token = jwt.sign({
         userId
     },process.env.JWT_SECRET,{expiresIn:age})
-    res.json({ token });
-    // res.cookie("token",token,{
-    //     httpOnly: true,
-    //     maxAge:age,
-    //     secure: true,
-    //     sameSite: 'None'
-    // })
+    res.cookie("token",token,{
+        httpOnly: true,
+        maxAge:age,
+        secure: true,
+        sameSite: 'None'
+    })
     
 
 }

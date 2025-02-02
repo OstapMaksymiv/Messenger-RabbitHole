@@ -15,9 +15,7 @@ const useLogin = () => {
             const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/login`,{
                 method:"POST",
                 credentials: "include", 
-                headers: {
-                    "Authorization": `Bearer ${localStorage.getItem("token")}`
-                },
+                headers:{"Content-Type":"application/json"},
                 body:JSON.stringify({username, password})
             })
             const data = await res.json();
