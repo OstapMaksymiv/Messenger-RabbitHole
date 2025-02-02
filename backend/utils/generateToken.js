@@ -7,7 +7,7 @@ export const generateToken = (userId, res) => {
         isAdmin:false
     },process.env.JWT_SECRET,{expiresIn:age})
     res.cookie("token",token,{
-        // httpOnly: true,
+        httpOnly: true,
         maxAge:age,
         // secure: true, // Обов'язково для sameSite: 'None'
         // sameSite: 'None'
