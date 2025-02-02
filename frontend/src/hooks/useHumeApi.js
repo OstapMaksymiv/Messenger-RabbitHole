@@ -6,7 +6,6 @@ const useHumeApi = () => {
     try {
       const response = await axios.post('https://api.hume.ai/analyze', {
         data: { text: text },
-        credentials: "include",
         headers: {
           'Authorization': `CIpV0KO3MAj9ub4gKjmhnXVS9XFRJu7RfX024A9rKsRVbu2t`, 
           'Content-Type': 'application/json',
