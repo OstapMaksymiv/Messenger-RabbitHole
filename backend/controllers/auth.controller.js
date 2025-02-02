@@ -1,6 +1,6 @@
 import User from '../models/user.model.js';
 import bcrypt from 'bcryptjs'
-
+import jwt from 'jsonwebtoken'
 import generateToken from '../utils/generateToken.js';
 export const login  = async (req,res) => {
     try {
@@ -14,8 +14,21 @@ export const login  = async (req,res) => {
             return res.status(404).json({message:"Credentials are incorrect"})
         }
       
-        generateToken(user._id,res)
+        // generateToken(user._id,res)
+        
+        const age = 1000 * 60 * 60 * 24 * 7;
+        const token = jwt.sign({
+            userId:user._id,
+            isAdmin:false
+        },process.env.JWT_SECRET,{expiresIn:age})
+        
         res
+        .cookie("token",token,{
+            httpOnly: true,
+            maxAge:age,
+            secure: true, // Обов'язково для sameSite: 'None'
+            sameSite: 'None'
+        })
         .status(200)
         .json({
             _id: user._id,
@@ -52,9 +65,22 @@ export const register  = async (req,res) => {
             profilePic: gender === 'male' ? boyProfilePic : girlProfilePic
         })
         if(newUser){
-            generateToken(newUser._id, res)
+            
             await newUser.save()
-            res.status(200).json(
+            const age = 1000 * 60 * 60 * 24 * 7;
+            const token = jwt.sign({
+                userId:newUser._id,
+                isAdmin:false
+            },process.env.JWT_SECRET,{expiresIn:age})
+            
+            res
+            .cookie("token",token,{
+                httpOnly: true,
+                maxAge:age,
+                secure: true, // Обов'язково для sameSite: 'None'
+                sameSite: 'None'
+            })
+            .status(200).json(
                 {
                     _id: newUser._id,
                     fullName: newUser.fullName,
