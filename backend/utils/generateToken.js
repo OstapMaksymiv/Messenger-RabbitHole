@@ -10,7 +10,7 @@ export const generateToken = (userId, res) => {
         httpOnly: true,
         maxAge:age,
         // secure: true, // Обов'язково для sameSite: 'None'
-        // sameSite: 'None'
+        sameSite: 'None'
     })
     
 
