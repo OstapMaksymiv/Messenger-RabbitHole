@@ -10,9 +10,7 @@ const useSendMessage = () => {
         try {
             const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/messages/send/${selectedConversation._id}`,{
                 method:"POST",
-                headers: {
-                    "Authorization": `Bearer ${localStorage.getItem("token")}`
-                },
+                headers: { "Content-Type": "application/json" },
                 credentials: "include",
                 body:JSON.stringify({message,img})
             })

@@ -14,9 +14,7 @@ const useSignUp =  () => {
         const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/signup`,{
             method:"POST",
             credentials: "include", 
-            headers: {
-              "Authorization": `Bearer ${localStorage.getItem("token")}`
-          },
+            headers:{"Content-Type":"application/json"},
             body:JSON.stringify({fullName, username, password, confirmPassword, gender})
 
         })

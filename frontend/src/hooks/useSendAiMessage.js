@@ -15,9 +15,7 @@ const useSendAiMessage = () => {
     try {
       const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/ai-chats`, {
         method: "PUT",
-        headers: {
-          "Authorization": `Bearer ${localStorage.getItem("token")}`
-      },
+        headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify({ question, answer, img }),
       });

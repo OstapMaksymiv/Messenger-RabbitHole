@@ -16,9 +16,7 @@ const useGetAllConversations = () => {
 				const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversation`,{
 					method:"GET",
 					credentials: "include", 
-					headers: {
-						"Authorization": `Bearer ${localStorage.getItem("token")}`
-					}
+					headers:{"Content-Type":"application/json"},
 				});
 				const data = await res.json();
                 setAllConversations(data);
