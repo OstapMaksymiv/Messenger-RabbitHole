@@ -311,7 +311,7 @@ nav ul{
     align-items: center;
     display: flex;
     justify-content: center;
-    z-index: 999;
+    // z-index: 999;
     position: relative;
     min-width: 100vw;
     min-height: 100vh;
@@ -753,7 +753,7 @@ nav ul{
     display: none;
   }
   .main-info .title{
-    font-size: 20px;
+    font-size: 24 px;
     width: 300px;
   }
   .main-info .title span {

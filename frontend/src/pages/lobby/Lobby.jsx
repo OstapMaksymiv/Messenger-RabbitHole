@@ -121,9 +121,9 @@ const Lobby = () => {
               ))}
             </div>
           ))}
-        {circles}
       
     </div>
+        {circles}
     </>
   );
 };

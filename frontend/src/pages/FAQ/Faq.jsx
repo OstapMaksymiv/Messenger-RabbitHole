@@ -25,14 +25,6 @@ const Faq = () => {
     {
       question: 'How secure is RabbitHole Messenger?',
       answer: 'RabbitHole Messenger uses end-to-end encryption to ensure your messages are private and secure. Only you and the intended recipient can read the messages.'
-    },
-    {
-      question: 'Can I send files and media through RabbitHole Messenger?',
-      answer: 'Yes, RabbitHole Messenger supports file sharing, including documents, images, videos, and more, with size limits depending on your subscription plan.'
-    },
-    {
-      question: 'Does RabbitHole Messenger have a group chat feature?',
-      answer: 'Yes, RabbitHole Messenger allows you to create group chats to connect and collaborate with multiple users at the same time.'
     }
   ];
   
