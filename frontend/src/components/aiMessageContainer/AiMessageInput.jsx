@@ -183,7 +183,8 @@ const MessageInput = () => {
           <input
             value={question}
             type="text"
-            className="border text-sm rounded-lg outline-none block w-full p-2.5 bg-transparent  border-gray-600 text-white pl-8"
+            style={{paddingRight:'35px'}}
+            className="border text-sm rounded-lg outline-none block w-full p-2.5  bg-transparent  border-gray-600 text-white pl-8"
             placeholder="Send a message"
             onChange={(e) => setQuestion(e.target.value)}
           />
