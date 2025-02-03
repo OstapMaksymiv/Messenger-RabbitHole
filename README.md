@@ -42,7 +42,7 @@ To install the project locally:
 
 4. Ensure you have a running **MongoDB** database.
 
-5. The project should be accessible locally at: `http://localhost:3000`
+5. The project should be accessible locally at: `http://localhost:3400`
 
 ## Database Structure
 
