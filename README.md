@@ -21,8 +21,8 @@ Projekt został stworzony przy użyciu **Node.js** i **MongoDB**. Aplikacja pozw
 Aby zainstalować projekt na swoim lokalnym środowisku:
 
 1. Pobierz projekt z GitHub:
-   - Frontend: [Link do repozytorium Frontend](#)
-   - Backend: [Link do repozytorium Backend](#)
+   - Frontend: [Link do repozytorium Frontend](https://github.com/OstapMaksymiv/Messenger-RabbitHole/tree/main/frontend)
+   - Backend: [Link do repozytorium Backend](https://github.com/OstapMaksymiv/Messenger-RabbitHole/tree/main/backend)
    
 2. Rozpakuj plik ZIP i przejdź do folderów **Frontend** i **Backend**.
 
