@@ -4,7 +4,10 @@ A communication application that allows users to exchange messages with each oth
 
 ![RabbitHole Preview](./frontend/public/rabbit-bg.png)
 ## Example of working Ai in chats.
-🎥 [Watch RabbitHole Video Preview](https://drive.google.com/file/d/1RMkiblOW2LAyokb28pzozVJAoOLO1ccb/view?usp=sharing)
+<video width="600" controls>
+  <source src="./frontend/public/example-ai-conv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ## Description
 
 This project was built using **Node.js** and **MongoDB**. The application allows users to exchange messages both between themselves and with AI. It integrates the **Gemini** model (for basic chats) and **Hume AI** (for emotion analysis and generating responses).
