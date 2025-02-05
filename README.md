@@ -2,17 +2,8 @@
 
 A communication application that allows users to exchange messages with each other and interact with AI. It supports user registration, login, messaging, and AI interactions that analyze conversations and provide suggestions.
 
-![RabbitHole Preview](./frontend/public/rabbit-bg.png)
 ## Example of working Ai in chats.
-
-<video width="600" controls>
-  <source src="assets/example-ai-conv.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<video width="600" controls>
-  <source src="./frontend/src/assets/example-ai-conv.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![RabbitHole Video Preview](./frontend/public/rabbit-bg.png)](https://drive.google.com/file/d/1RMkiblOW2LAyokb28pzozVJAoOLO1ccb/view?usp=sharing)
 
 ## Description
 
