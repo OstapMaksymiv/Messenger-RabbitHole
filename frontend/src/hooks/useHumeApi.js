@@ -4,7 +4,6 @@ const useHumeApi = () => {
 
   const analyzeEmotion = async (text) => {
     try {
-      axios.defaults.withCredentials = true;
       const response = await axios.post('https://api.hume.ai/analyze', {
         data: { text: text },
         headers: {
