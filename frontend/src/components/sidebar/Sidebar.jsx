@@ -9,6 +9,7 @@ import useGetConversations from "../../hooks/useGetConversations";
 import useConversation from "../../zustand/useConversation";
 import { getRandomEmoji } from "../../utils/emoji";
 import Conversation from "./Conversation";
+import useOpenAiChat from "../../hooks/useOpenAiChat";
 import { useAuthContext } from "../../context/AuthContext";
 
 gsap.registerPlugin(Flip);
@@ -20,6 +21,7 @@ const Sidebar = () => {
 	const { conversations, setFilteredConversations,filteredConversations,loading,savedChats } = useGetConversations();
 	const [emojiMap, setEmojiMap] = useState({});
 
+	const {aiConversation, OpenAiChat} = useOpenAiChat();
 
 	useEffect(() => {
 		
