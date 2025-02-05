@@ -2,6 +2,8 @@
 
 A communication application that allows users to exchange messages with each other and interact with AI. It supports user registration, login, messaging, and AI interactions that analyze conversations and provide suggestions.
 
+![RoomZee Preview](./frontend/public/rabbit-bg.png)
+
 ## Description
 
 This project was built using **Node.js** and **MongoDB**. The application allows users to exchange messages both between themselves and with AI. It integrates the **Gemini** model (for basic chats) and **Hume AI** (for emotion analysis and generating responses).
