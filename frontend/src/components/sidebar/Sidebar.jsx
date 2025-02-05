@@ -9,7 +9,6 @@ import useGetConversations from "../../hooks/useGetConversations";
 import useConversation from "../../zustand/useConversation";
 import { getRandomEmoji } from "../../utils/emoji";
 import Conversation from "./Conversation";
-import useOpenAiChat from "../../hooks/useOpenAiChat";
 import { useAuthContext } from "../../context/AuthContext";
 
 gsap.registerPlugin(Flip);
@@ -20,8 +19,7 @@ const Sidebar = () => {
 	const {selectedConversation, setSelectedConversation,selectedAiConversation,setSelectedAiConversation } = useConversation();
 	const { conversations, setFilteredConversations,filteredConversations,loading,savedChats } = useGetConversations();
 	const [emojiMap, setEmojiMap] = useState({});
-	const itemsRef = useRef([]);
-	const {aiConversation, OpenAiChat} = useOpenAiChat();
+
 
 	useEffect(() => {
 		
@@ -161,7 +159,7 @@ const Sidebar = () => {
 
 
 
-			<div className={`flex gap-2 items-center hover:bg-[rgb(34,36,86)] rounded px-4 ${selectedAiConversation && "bg-[rgb(34,36,86)]"}  py-1 cursor-pointer `} onClick={handleOpenAiChat} >
+			<div className={`flex gap-2 items-center hover:bg-[rgb(34,36,86)] rounded px-3 ${selectedAiConversation && "bg-[rgb(34,36,86)]"}  py-1 cursor-pointer `} onClick={handleOpenAiChat} >
 				<div className={`avatar `}>
 					<div className='w-12 rounded-full'>
 						<img
