@@ -2,7 +2,7 @@
 
 A communication application that allows users to exchange messages with each other and interact with AI. It supports user registration, login, messaging, and AI interactions that analyze conversations and provide suggestions.
 
-![RoomZee Preview](./frontend/public/rabbit-bg.png)
+![RabbitHole Preview](./frontend/public/rabbit-bg.png)
 
 ## Description
 
